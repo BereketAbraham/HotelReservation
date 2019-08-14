@@ -12,7 +12,7 @@
   <link href="resources/css/index.css" rel="stylesheet">
 </head>
 <body>
-  <div id="container">
+<div id="container">
   <%-- top menu --%>
     <div class="top">
       <h1>My Luxury Hotel</h1>
