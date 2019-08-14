@@ -1,6 +1,7 @@
 package edu.mum.cs472.dao;
 
 import edu.mum.cs472.model.Booking;
+import edu.mum.cs472.model.Customer;
 import edu.mum.cs472.model.Room;
 
 import java.time.LocalDate;
