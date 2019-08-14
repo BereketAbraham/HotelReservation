@@ -4,9 +4,6 @@ window.onload = function () {
     document.getElementById("check").onclick = search;
 };
 
-// $(function() {
-//      $("#check").onclick(search);
-
 function search() {
     var checkIn = $("#checkIn").val();
     var checkOut = $("#checkOut").val();
