@@ -8,14 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-  <title>My Luxury Hotel</title>
+  <title>The Luxury Hotel</title>
   <link href="resources/css/index.css" rel="stylesheet">
 </head>
 <body>
-  <div id="container">
+<div id="container">
   <%-- top menu --%>
     <div class="top">
-      <h1>My Luxury Hotel</h1>
+      <h1>The Luxury Hotel</h1>
       <nav>
         <ul>
           <li><a href="index.jsp" class="active">Home</a></li>
@@ -29,7 +29,8 @@
     </div>
     <div class="banner">
       <h2>Indoor and Outdoor</h2>
-      <h1>ENJOY A LUXURY EXPERIENCE!</h1>
+      <h1>ENJOY!</h1>
+      <h1>The Most Extravagant Hotel Experiences in the World!</h1>
     </div>
   </div>
 </body>
