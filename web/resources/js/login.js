@@ -1,22 +1,36 @@
 "use strict";
 
 $(document).ready() (function () {
-    document.getElementById("btn").onclick = loginFunction;
+    $("#btn").click(loginFunction); // Attach event to the login button.
 });
 
+/**
+ * Collecting login credentials and sending them to the servlet in an ajax call
+ */
 function loginFunction() {
     var un = $("#userName").val();
     var pw = $("#password").val();
     var userObj = {"userName":un, "password":pw};
-    $.post('firstLogin', {user:JSON.stringify(userObj)}, myFunction, "json");
+    $.post('firstLogin',
+        {user:JSON.stringify(userObj),
+        "dataType": "json"}
+        .done(chkLogin));
 }
 
-function myFunction(data) {
+/**
+ * Result of the ajax call if it succeeds
+ * @param data the returned data from the servlet in response to the ajax call
+ */
+function chkLogin(data) {
+    // If login succeeded click the submit button
     if(data == "success"){
         $("#submitBtn").click();
+        $("#warn").removeClass("bad-login");
     }else{
-        var msgDiv = document.getElementById("warn");
-        msgDiv.innerHTML = data;
-        msgDiv.style.display = "block";
+    // if the login fails display the warning message
+        var msgDiv = $("#warn");
+        msgDiv.text(data);
+        msgDiv.addClass("bad-login");
+        // msgDiv.style.display = "block";
     }
 }
