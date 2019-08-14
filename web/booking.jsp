@@ -411,7 +411,7 @@
             </div>
 
             <div class="inputs">
-                <a href="terms.jsp" target="_blank">Terms and conditions</a>
+                <a <%--href="terms.jsp"--%> target="_blank">Terms and conditions</a>
                 <input type="checkbox" name="checkbox" value="check" id="agree"/> I have read and agree to the Terms and
                 Conditions and Privacy Policy.
             </div>
