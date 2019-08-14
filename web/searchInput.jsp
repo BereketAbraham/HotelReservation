@@ -22,7 +22,7 @@
             <ul>
                 <li><a href="index.jsp">Home</a></li>
                 <li><a href="searchInput.jsp" class="active">Search rooms</a></li>
-                <li><a href="review.jsp">Reviews</a></li>
+                <li><a href="#">Reviews</a></li>
                 <li ${logged}><a href="login.jsp">Login</a></li>
                 <%--                <li><a href="#">SignUp</a></li>--%>
                 <li><a href="#">Contact</a></li>
