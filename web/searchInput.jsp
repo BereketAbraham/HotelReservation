@@ -17,7 +17,7 @@
 <div id="container">
 
     <div class="top">
-        <h1>My Luxury Hotel</h1>
+        <h1>The Luxury Hotel</h1>
         <nav>
             <ul>
                 <li><a href="index.jsp">Home</a></li>
