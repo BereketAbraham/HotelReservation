@@ -1,6 +1,6 @@
 "use strict";
 
-$(document).ready() (function () {
+$(function () {
     $("#btn").click(loginFunction); // Attach event to the login button.
 });
 
@@ -10,11 +10,11 @@ $(document).ready() (function () {
 function loginFunction() {
     var un = $("#userName").val();
     var pw = $("#password").val();
-    var userObj = {"userName":un, "password":pw};
+    var userObj = {"userName": un, "password": pw};
     $.post('firstLogin',
-        {user:JSON.stringify(userObj),
-        "dataType": "json"}
-        .done(chkLogin));
+        {user:JSON.stringify(userObj)},
+        chkLogin,
+        "json");
 }
 
 /**
@@ -25,12 +25,11 @@ function chkLogin(data) {
     // If login succeeded click the submit button
     if(data == "success"){
         $("#submitBtn").click();
-        $("#warn").removeClass("bad-login");
     }else{
-    // if the login fails display the warning message
+    // if the login fails show the warning message
         var msgDiv = $("#warn");
         msgDiv.text(data);
-        msgDiv.addClass("bad-login");
-        // msgDiv.style.display = "block";
+        msgDiv.removeClass("warn-hide");
+        msgDiv.addClass("warn-show");
     }
 }
