@@ -94,7 +94,16 @@ footer {
     padding: 20px;
 }
 
-#warn{
+.warn-hide{
     display: none;
-    color: red;
+}
+
+.warn-show{
+    display: block;
+    color: white;
+    background-color: red;
+    opacity: 0.8;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
 }
