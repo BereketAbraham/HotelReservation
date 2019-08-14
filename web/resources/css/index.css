@@ -97,3 +97,7 @@ footer {
     font-size: 18px;
     color: #eee;
 }
+
+.bad-login {
+    display: block;
+}
