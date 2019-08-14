@@ -40,8 +40,8 @@ public class DAO {
         roomList.add(r10);
 
         //creating some bookings
-        bookingList.add(new Booking(LocalDate.of(2019,7,16), LocalDate.of(2019,7,20), r2));
-        bookingList.add(new Booking(LocalDate.of(2019,7,21), LocalDate.of(2019,7,24), r10));
+        bookingList.add(new Booking(LocalDate.of(2019,8,12), LocalDate.of(2019,8,20), r2));
+        bookingList.add(new Booking(LocalDate.of(2019,8,13), LocalDate.of(2019,8,24), r10));
 
         //creating customers
         Customer customer1 = new Customer("Yosief", "Teklemariam", "55 Main St.", "Fairfield", "Iowa", "United States", "55677", "yosief@example.com", "776-786-9898","yosief","1234");
