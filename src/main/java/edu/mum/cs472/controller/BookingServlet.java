@@ -24,7 +24,7 @@ public class BookingServlet extends HttpServlet {
         HttpSession bookSession = request.getSession();
 
         String temp = request.getParameter("expiration-date");
-        // DO THE DATEEEE!
+
         request.getParameter("billing-address");
         request.getParameter("cvv");
 
