@@ -10,9 +10,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <meta name="description" content="First lab of WAP"/>
-    <meta name="keywords" content="HTML, CSS, Lab, Furkan, First Day of Class"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="WAP Course Project"/>
     <link href="media/images/logo.png" type="image/png" rel="shortcut icon"/>
     <link href="resources/css/booking.css" rel="stylesheet">
     <title>Booking Form</title>
