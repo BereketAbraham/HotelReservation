@@ -43,7 +43,7 @@ public class LogInServlet extends HttpServlet {
 
             // remember logged-in user
             Cookie c = new Cookie("userCookie", client.getUserName());
-            c.setMaxAge(2592000); // one month
+            c.setMaxAge(60); // one minute
             response.addCookie(c);
 
             String loggedIn = "hidden";
@@ -54,8 +54,7 @@ public class LogInServlet extends HttpServlet {
             rd.forward(request, response);
         }
     }
-
-
+    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     }
